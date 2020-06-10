@@ -28,7 +28,7 @@ class App extends React.Component{
       params: {
         part: "snippet",
         maxResults: 3,
-        key: 'AIzaSyBEt1flDsHA3L2YXVt8BrCguW_2Mx5gY8s',
+        key: 'AIzaSyAJHsV5vRqe-U3ym-uLjBm0K0tbqZYGYyg',
         q: searchTerm,
       }
 
@@ -44,23 +44,24 @@ class App extends React.Component{
     return(
      <Grid justify='center' container spacing={10}>
        
-       <Grid item xs={12}>
+       <Grid item xs={12} >
          
-         <Grid container spacing={10}>
-         <Grid item xs ={1}>
+         <Grid container spacing={9}>
+         <Grid item xs ={12} lg={1}>
          <Avat />
           </Grid>
-           <Grid item xs ={11}>
+           <Grid item xs ={12} lg={11}>
               <Title onFormSubmit={this.handleSubmit}/>
             </Grid>
             </Grid>
 
-            <Grid container className = 'Video' spacing={10}>
-            <Grid item xs ={8}>
+            <Grid container  spacing={10}>
+            <Grid item xs ={12} lg={8} >
               <VideoDetails video={selectedVideo}/>
             </Grid>
+            
 
-            <Grid item xs ={4}>
+            <Grid item xs ={10} lg={4} >
               <VideoList videos={videos} onVideoSelect={this.onVideoSelect}/>
             </Grid>
            </Grid>

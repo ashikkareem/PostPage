@@ -2,12 +2,9 @@
 
 
 
-@media  (max-width: 770px) {
+@media  (max-width: 1224px) {
   .Video {
-    margin: 2% 0 !important;
+    
   }
 
-  .image {
-    width: 100%;
-  }
 }

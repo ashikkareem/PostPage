@@ -13,7 +13,7 @@ import {Paper, Typography} from '@material-ui/core';
   
   return (
     <Fragment>
-     <Paper elevation={6} style={{height: '80%'}}>
+     <Paper elevation={6} style={{height: '60%'}}>
      <iframe
           frameBorder="0"
           height="100%"
@@ -24,8 +24,8 @@ import {Paper, Typography} from '@material-ui/core';
      </Paper>
 
      <Paper elevation={6} style={{ padding: '15px' }}>
-        <Typography variant="h4">
-          {video.snippet.title} - {video.snippet.channelTitle}
+        <Typography variant="subtitle1">
+         <b>{video.snippet.title} - {video.snippet.channelTitle}</b> 
         </Typography>
         <Typography variant="subtitle1">
           {video.snippet.channelTitle}
