@@ -1,7 +1,27 @@
 import React, {Fragment} from 'react';
 import {Paper, Typography} from '@material-ui/core';
 
-
+const styles = theme => ({
+  root: {
+      background: 'white',
+      position: '-webkit-sticky',
+      position: 'sticky',
+      top: 20,
+      bottom: 20, 
+      paddingTop: '40px',
+      paddingBottom: '40px',
+      zIndex: 5,
+  },
+  details: {
+      display: 'flex'
+  },
+  progressWrapper: {
+      marginTop: theme.spacing(2)
+  },
+  linearProgress: {
+      height: 20
+  },
+});
 
  const videoDetails = ({ video }) => {
   if (!video) return <div>Loading...</div>;
@@ -12,7 +32,7 @@ import {Paper, Typography} from '@material-ui/core';
 
   
   return (
-    <Fragment>
+    <Fragment >
      <Paper elevation={6} style={{height: '60%'}}>
      <iframe
           frameBorder="0"

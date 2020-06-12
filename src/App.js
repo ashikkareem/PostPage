@@ -4,6 +4,10 @@ import { Grid , Avatar} from '@material-ui/core';
 
 import { Title, VideoDetails, VideoList , Avat} from './components/index';
 
+import './App.css'
+
+
+
 import Youtube from './api/trustVideo'; 
 
 
@@ -27,8 +31,8 @@ class App extends React.Component{
     const response = await Youtube.get('search', {
       params: {
         part: "snippet",
-        maxResults: 3,
-        key: 'AIzaSyAJHsV5vRqe-U3ym-uLjBm0K0tbqZYGYyg',
+        maxResults: 10,
+        key: 'AIzaSyBEt1flDsHA3L2YXVt8BrCguW_2Mx5gY8s',
         q: searchTerm,
       }
 
@@ -46,7 +50,7 @@ class App extends React.Component{
        
        <Grid item xs={12} >
          
-         <Grid container spacing={9}>
+         <Grid container spacing={10}>
          <Grid item xs ={12} lg={1}>
          <Avat />
           </Grid>
@@ -55,8 +59,9 @@ class App extends React.Component{
             </Grid>
             </Grid>
 
-            <Grid container  spacing={10}>
-            <Grid item xs ={12} lg={8} >
+            <Grid container  spacing={10} >
+            <Grid item xs ={12} lg={8}  className='sticky'>
+              
               <VideoDetails video={selectedVideo}/>
             </Grid>
             

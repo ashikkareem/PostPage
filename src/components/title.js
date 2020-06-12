@@ -21,7 +21,7 @@ class  title extends React.Component {
 
   render(){
   return (
-    <Paper elevation={6} style={{padding:'25px'}}>
+    <Paper elevation={10} style={{padding:'25px', marginBottom:'25px'}}>
        <Typography variant="h4">
           <b>Trust title</b>
         </Typography>       

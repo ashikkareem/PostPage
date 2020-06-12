@@ -26,7 +26,7 @@ const usestyles = makeStyles((theme) => ({
   const classes = usestyles();
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root} >
       
       <Avatar alt="Remy Sharp" src={coronaimage} className={classes.large} />
     </div>

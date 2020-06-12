@@ -10,7 +10,7 @@ import { Grid } from "@material-ui/core";
   
   
   return (
-    <Grid container spacing = {10} > 
+    <Grid container spacing = {5} > 
     {listOfVideos}
     </Grid>
     )
